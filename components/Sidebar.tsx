@@ -1,7 +1,14 @@
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { GiTie } from "react-icons/gi";
-import {RiLightbulbFlashFill} from "react-icons/ri";
+import { RiLightbulbFlashFill } from "react-icons/ri";
+import { SiGmail } from "react-icons/si";
+
+// TODO: send all this to a constants file
+const GMAIL = "kevinled@gmail.com";
+const LINKEDIN_URI = "";
+const GITHUB_URI = "";
+const TWITTER_URI = "";
 
 const Sidebar = () => {
 	return (
@@ -17,7 +24,7 @@ const Sidebar = () => {
 				Download Resume
 			</a>
 			{/* social icons */}
-			<div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full">
+			<div className="flex justify-around w-9/12 mx-auto my-5 text-cyan-500 md:w-full">
 				<a href="">
 					<AiFillGithub className="w-8 h-8 cursor-pointer" />
 				</a>
@@ -27,16 +34,23 @@ const Sidebar = () => {
 				<a href="">
 					<AiFillTwitterCircle className="w-8 h-8 cursor-pointer" />
 				</a>
+				<a href="">
+					<SiGmail className="w-8 h-8 cursor-pointer" />
+				</a>
 			</div>
 			<div className="py-4 my-5 bg-gray-200" style={{ marginLeft: "-1rem", marginRight: "-1rem" }}>
 				<div className="flex items-center justify-center space-x-2">
 					<GoLocation />
 					<span>Buenos Aires, Argentina</span>
 				</div>
-				<p className="my-2">kevinledesmam95@gmail.com</p>
+				<a href={`mailto:${GMAIL}`}>
+					<p className="my-2">{GMAIL}</p>
+				</a>
 				<p className="my-2">123123123123</p>
 			</div>
-			<button className="text-blue-500"><RiLightbulbFlashFill className="w-8 h-8 cursor-pointer"/></button>
+			<button className="text-cyan-500">
+				<RiLightbulbFlashFill className="w-8 h-8 cursor-pointer" />
+			</button>
 		</div>
 	);
 };
