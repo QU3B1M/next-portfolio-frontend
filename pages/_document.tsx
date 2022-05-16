@@ -5,7 +5,7 @@ export default function Document() {
 		<Html>
 			<Head />
 			{/* or cyan: bg-cyan-800 */}
-			<body className="bg-slate-600">
+			<body className="bg-cyan-500 dark:bg-cyan-900">
 				<Main />
 				<NextScript />
 			</body>

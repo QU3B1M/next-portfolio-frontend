@@ -9,11 +9,11 @@ export default function index() {
         Im Quebim bla bla bla bla bla bla bla bla bl bla bla bla
         bla bla bla bla bla bla bla bla bla bla bla bla bla bla
       </h5>
-      <div className="flex-grow p-4 mt-5 bg-gray-400" style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
+      <div className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-slate-800" style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem'}}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
         <div className="grid gap-6 lg:grid-cols-2">
           {services.map(service => (
-            <div className="bg-gray-200 rounded-lg lg:col-span-1"><ServiceCard service={service}/></div>
+            <div className="bg-gray-200 rounded-lg lg:col-span-1 dark:bg-slate-500"><ServiceCard service={service}/></div>
           ))}
         </div>  
       </div>
