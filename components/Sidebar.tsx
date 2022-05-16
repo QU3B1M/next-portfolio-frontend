@@ -12,10 +12,10 @@ const GITHUB_URI = "";
 const TWITTER_URI = "";
 
 const Sidebar = () => {
-	const {theme, setTheme} = useTheme();
+	const { theme, setTheme } = useTheme();
 	const toggleTheme = () => {
 		setTheme(theme === "light" ? "dark" : "light");
-	}
+	};
 
 	return (
 		<div className="sidebar">

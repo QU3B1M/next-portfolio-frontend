@@ -2,8 +2,7 @@ import { FunctionComponent } from "react";
 import { IService } from "../types";
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({ service: { Icon, title, description } }) => {
-  
-  // Renders the inner html of the service description
+	// Renders the inner html of the service description
 	const createMarkup = () => {
 		return { __html: description };
 	};
