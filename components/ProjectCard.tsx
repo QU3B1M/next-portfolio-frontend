@@ -12,7 +12,7 @@ const ProjectCard: FunctionComponent<{
 			<img src={project.image_path} alt={project.title} className="cursor-pointer" onClick={() => setShow(true)}/>
 			<p className="my-2 text-center">{project.title}</p>
       {show && (
-			<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 bg-gray-100 md:grid-cols-2 gap-x-12 dark:bg-slate-500">
+			<div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 bg-gray-100 rounded-md md:grid-cols-2 gap-x-12 dark:bg-slate-500">
         <img src={project.image_path} alt={project.title} />
         <div className="flex justify-center my-4 space-x-3">
           <a className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-slate-700" href={project.deployed_url}><AiFillGithub/><span>Github</span></a>
